@@ -9,7 +9,6 @@ data class Person(
     fun isAdult() = age >= 18
 
     fun hello(): String {
-        throw RuntimeException()
         return "Hello, $name!"
     }
 }

@@ -12,12 +12,12 @@ class PersonTest : StringSpec({
 
     "isAdult() should return false if age is 17" {
         val person = Person("Bob", 17)
-        person.isAdult() shouldBe true
+        person.isAdult() shouldBe false
     }
 
     "isAdult() should return false if age is 18" {
         val person = Person("Bob", 18)
-        person.isAdult() shouldBe false
+        person.isAdult() shouldBe true
     }
 
     "hello() should return 'Hello, Alice!' if name is Alice" {
