@@ -2,6 +2,12 @@ name: Build
 
 on:
   - push
+  -
+permissions:
+  contents: read
+  checks: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
