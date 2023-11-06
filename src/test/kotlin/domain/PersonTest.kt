@@ -14,4 +14,9 @@ class PersonTest : StringSpec({
         val person = Person("Bob", 17)
         person.isAdult() shouldBe true
     }
+
+    "isAdult() should return false if age is 18" {
+        val person = Person("Bob", 18)
+        person.isAdult() shouldBe false
+    }
 })
